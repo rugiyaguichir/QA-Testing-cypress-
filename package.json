@@ -1,0 +1,14 @@
+{
+  "name": "navigator-eye",
+  "version": "1.0.0",
+  "description": "My e2e-tests via Cypress for Navigator CRM ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rugiya Guichir",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
