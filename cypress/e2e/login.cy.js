@@ -1,10 +1,14 @@
+import { LoginPage } from "../pageObjects/LoginPage";
+
 describe('Login Suite:', () => {
+  const loginPage = new LoginPage();
   it('should do login successfully', () => {
-    cy.visit('http://167.114.201.175:5000/');
-    cy.get('input[name="userName"]').type('Admin');
-    cy.get('input[name="password"]').type('Admin@Navi');
-    cy.get('button[type="submit"]').click();
-    cy.wait(2000);
+    loginPage.doLogin();
+    // cy.visit('http://167.114.201.175:5000/');
+    // cy.get('input[name="userName"]').type('Admin');
+    // cy.get('input[name="password"]').type('Admin@Navi');
+    // cy.get('button[type="submit"]').click();
+    // cy.wait(2000);
     cy.url.should('include', 'clients');
   })
 
